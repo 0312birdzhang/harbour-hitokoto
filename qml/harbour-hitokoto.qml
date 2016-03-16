@@ -44,7 +44,7 @@ ApplicationWindow{
     property string  catname
     property bool loading: false
 
-    cover: "cover/CoverPage.qml"
+    cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: Orientation.Portrait
     _defaultPageOrientations: Orientation.Portrait
 
@@ -123,7 +123,7 @@ ApplicationWindow{
          Label{
              id:contentExt
              text:"——"+(source?(source+","):"")+catname
-             width:parent.width
+             width:parent.width * 0.7
              wrapMode: Text.WordWrap
              font.pixelSize:Theme.fontSizeSmall
              horizontalAlignment: Text.AlignRight

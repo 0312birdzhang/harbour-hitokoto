@@ -4,5 +4,6 @@
         <file>qml/main.js</file>
         <file>qml/gfx.jpg</file>
         <file>qml/Signalcenter.qml</file>
+        <file>qml/cover/CoverPage.qml</file>
     </qresource>
 </RCC>
