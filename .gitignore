@@ -1,0 +1,7 @@
+*.user*
+*.project
+harbour-9smart.pro.user
+*.pyc
+*.pyo
+**api.js
+**.qm
