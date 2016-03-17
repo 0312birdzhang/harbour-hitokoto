@@ -5,5 +5,8 @@
         <file>qml/gfx.jpg</file>
         <file>qml/Signalcenter.qml</file>
         <file>qml/cover/CoverPage.qml</file>
+        <file>qml/fontawesome.js</file>
+        <file>qml/fontawesome-webfont.ttf</file>
+        <file>qml/DBMeterController.qml</file>
     </qresource>
 </RCC>

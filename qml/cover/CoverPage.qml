@@ -34,6 +34,8 @@ import Sailfish.Silica 1.0
 CoverBackground {
     CoverPlaceholder{
         icon.source: "file:///usr/share/icons/hicolor/86x86/apps/harbour-hitokoto.png"
+        icon.width: parent.width / 2.5
+        icon.height: parent.width / 2.5
         text: "一言"
     }
 }

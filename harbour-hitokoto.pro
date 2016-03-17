@@ -13,11 +13,12 @@
 TARGET = harbour-hitokoto
 
 
-CONFIG += sailfishapp sailfishapp_no_deploy_qml
+CONFIG += sailfishapp sailfishapp_no_deploy_qml c++11
 
-SOURCES += src/harbour-hitokoto.cpp
+SOURCES += src/harbour-hitokoto.cpp \
+    src/DBMeter.cpp
 
-QT += quick sensors svg xml
+QT += quick sensors svg xml qml  gui multimedia concurrent
 
 OTHER_FILES += qml/harbour-hitokoto.qml \
     qml/cover/CoverPage.qml \
@@ -42,8 +43,13 @@ TRANSLATIONS += translations/harbour-hitokoto-de.ts
 DISTFILES += \
     qml/main.js \
     qml/Signalcenter.qml \
-    qml/gfx.jpg
+    qml/gfx.jpg \
+    qml/fontawesome.js \
+    qml/DBMeterController.qml
 
 RESOURCES += \
     harbour-hitokoto.qrc
+
+HEADERS += \
+    src/DBMeter.hpp
 

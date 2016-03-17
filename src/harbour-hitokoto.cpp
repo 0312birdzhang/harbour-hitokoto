@@ -34,15 +34,42 @@
 #include <QtGui/QGuiApplication>
 #include <QtQml/QQmlApplicationEngine>
 #include <sailfishapp.h>
+#include "DBMeter.hpp"
 
+//int main(int argc, char *argv[])
+//{
+//    QGuiApplication *app = SailfishApp::application(argc, argv);
+//    QScopedPointer<QQuickView> view(SailfishApp::createView());
 
-int main(int argc, char *argv[])
+//    view->setSource(QUrl("qrc:///qml/harbour-hitokoto.qml"));
+//    view->show();
+//    return app->exec();
+//}
+
+class Main {
+    private:
+    QGuiApplication *app;
+    QQuickView *view;
+
+    public:
+    Main(int &argc, char* argv[]) {
+        app = SailfishApp::application(argc, argv);
+        view = SailfishApp::createView();
+        view->setSource(QUrl("qrc:///qml/harbour-hitokoto.qml"));
+        QObject::connect(view->engine(), SIGNAL(quit()), app, SLOT(quit()));
+    }
+    Main() {}
+    ~Main() {}
+
+    int Launch() {
+        view->show();
+        return app->exec();
+    }
+};
+
+Q_DECL_EXPORT int main(int argc, char* argv[])
 {
-    QGuiApplication *app = SailfishApp::application(argc, argv);
-    QScopedPointer<QQuickView> view(SailfishApp::createView());
-
-    view->setSource(QUrl("qrc:///qml/harbour-hitokoto.qml"));
-    view->show();
-    return app->exec();
+    qmlRegisterType<DBMeter>("harbour.saildbmeter.dbmeter", 1, 0, "DBMeter");
+    Main *appli = new Main(argc, argv);
+    return appli->Launch();
 }
-
