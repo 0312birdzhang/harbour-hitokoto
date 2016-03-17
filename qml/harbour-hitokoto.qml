@@ -65,7 +65,7 @@ ApplicationWindow{
 
     onLevelChanged: {
         //console.log("level:"+level)
-        if(level.toFixed(2) > 90.00){
+        if(level.toFixed(2) > 80.00){
             JS.gethitokoto();
         }
     }
