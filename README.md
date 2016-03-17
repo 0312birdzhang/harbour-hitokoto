@@ -8,5 +8,10 @@
 ##RoadMap
 
 *1.加入随机背景图
-*2.加入吹一吹换一言
+
+~~*2.加入吹一吹换一言~~
+
 *3.to be continue
+
+
+项目吹一吹参考：https://github.com/LouJo/SailDBMeter
