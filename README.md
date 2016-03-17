@@ -14,4 +14,10 @@
 *3.to be continue
 
 
-项目吹一吹参考：https://github.com/LouJo/SailDBMeter
+##项目参考
+
+*1. https://github.com/LouJo/SailDBMeter
+
+*2. Fontawesome http://fontawesome.io
+
+*3. http://kdeblog.mageprojects.com/2012/11/20/using-fonts-awesome-in-qml/
