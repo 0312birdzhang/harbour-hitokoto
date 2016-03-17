@@ -105,7 +105,6 @@ ApplicationWindow{
         width: parent.width
         height:parent.height
         opacity: 0.08
-
     }
     FontLoader {
         source: "./fontawesome-webfont.ttf"
@@ -140,7 +139,7 @@ ApplicationWindow{
             MouseArea{
                 anchors.fill: parent
                 onPressAndHold: {
-                    Clipboard.text = detectedText.text;
+                    Clipboard.text = hitokoto;
                     //addNotification(qsTr("Copyed to clipboard"));
                 }
             }

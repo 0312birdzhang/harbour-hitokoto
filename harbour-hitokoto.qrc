@@ -8,5 +8,6 @@
         <file>qml/fontawesome.js</file>
         <file>qml/fontawesome-webfont.ttf</file>
         <file>qml/DBMeterController.qml</file>
+        <file>qml/cover/cover.png</file>
     </qresource>
 </RCC>
