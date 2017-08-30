@@ -146,7 +146,7 @@ ApplicationWindow{
         }
         Label{
             id:contentExt
-            text:"——"+(source?(source+","):"")+catname
+            text:"——"+(source?(source+","):"")
             width:parent.width * 0.7
             wrapMode: Text.WordWrap
             font.pixelSize:Theme.fontSizeSmall

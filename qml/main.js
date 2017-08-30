@@ -1,6 +1,6 @@
 .pragma library
 
-var api = "http://api.hitokoto.us/rand?charset=utf-8";
+var api = "https://sslapi.hitokoto.cn/?encode=json";
 var signalcenter;
 function sendWebRequest(url, callback, method, postdata) {
     var xmlhttp = new XMLHttpRequest();
@@ -43,8 +43,8 @@ function loadResult(oritxt){
     var obj = JSON.parse(oritxt);
     //console.log(oritxt)
     app.hitokoto = obj.hitokoto;
-    app.author = obj.author;
-    app.source = obj.source;
-    app.catname = obj.catname;
+    app.author = obj.creator;
+    app.source = obj.from;
+    app.catname = obj.type;
 }
 
