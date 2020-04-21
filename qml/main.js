@@ -1,6 +1,6 @@
 .pragma library
 
-var api = "https://sslapi.hitokoto.cn/?encode=json";
+var api = "https://v1.hitokoto.cn/?encode=json";
 var signalcenter;
 function sendWebRequest(url, callback, method, postdata) {
     var xmlhttp = new XMLHttpRequest();
