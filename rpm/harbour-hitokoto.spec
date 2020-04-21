@@ -13,8 +13,8 @@ Name:       harbour-hitokoto
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Hitokoto reader
-Version:    0.1
-Release:    3
+Version:    0.3.1
+Release:    1
 Group:      Qt/Qt
 License:    LICENSE
 URL:        http://hitokoto.us
